@@ -1,0 +1,66 @@
+Below is the code to create your own Multi-Lingual Dictionary!
+
+"""
+1.6m WORD MULTI-LINGUAL DICTIONARY!!
+
+Information from: https://www.karamasoft.com/UltimateSpell/Dictionary.aspx
+"""
+
+MLDict = []
+
+
+"""British"""
+f1 = open("brit-a-z.txt","r")
+
+for i in f1:
+    MLDict.append(i.replace("\n",""))
+
+"""Afrikaans"""
+f2 = open("af-ZA.dic","r")
+
+for j in f2:
+    MLDict.append(j.replace("\n",""))
+
+
+"""German"""
+f4 = open("de-DE.dic","r") 
+
+for l in f4:
+    MLDict.append(l.replace("\n",""))
+
+
+"""French"""
+f5 = open("fr-FR.dic","r") 
+
+for m in f5:
+    MLDict.append(m.replace("\n",""))
+
+
+"""Indonesian"""
+f7 = open("id-ID.dic","r") 
+
+for o in f7:
+    MLDict.append(o.replace("\n",""))
+
+
+"""Italian"""
+f8 = open("it-IT.dic","r") 
+
+for p in f8:
+    MLDict.append(p.replace("\n",""))
+
+
+
+print(len(MLDict))
+
+
+
+
+"""Write to .dic file"""
+f9 = open("Multi-Lingual Dictionary Tutorial.dic","w") 
+
+for z in MLDict:
+    f9.write(z)
+    f9.write("\n")
+
+
